@@ -12,7 +12,7 @@ const controls = [
 
 const burgerControls = (props) => {
   return <div className="BuildControls">{controls.map(ele => 
-    <BuildControl key={ele.label} label={ele.label}  added={() => props.ingredientAdded(ele.type)}/>)}</div>;
+    <BuildControl key={ele.label} label={ele.label}  added={() => props.ingredientAdded(ele.type)} less={() => props.ingredientLess(ele.type)}/>)}</div>;
 };
 
 export default burgerControls;
